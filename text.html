@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ======================================================================
+    ===============================------------------===================================
+---------------------------------------------------------------------------------------- -->
+    <div id="wrapper">
+        <main>
+            <div id="hotspots" class="zoomNotClickable">
+                <div id="cityOverview">
+                    <div id="cityOverviewHelper">
+                        <!-- <img src="./img/bando.png" class="img-bando"
+                            id="cityOverviewImage" alt="BT City Overview" usemap="#cityOverviewMap" width="3456"
+                            height="1752" /> -->
+
+                        <img src="./img/bando.png" class="img-bando" id="cityOverviewImage" alt="BT City Overview"
+                            usemap="#cityOverviewMap" width="5000" height="2500" />
+                        <map name="cityOverviewMap">
+                            <!-- left, top, right, bottom -->
+                            <area shape="rect" coords="520,1390,411,901" href="#" alt="The Smith Family"
+                                data-hotspot="one" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="830,1650,411,901" href="#" alt="Richard & Louise care workers"
+                                data-hotspot="two" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="1350,1450,411,901" href="#" alt="Richard & Louise care workers"
+                                data-hotspot="three" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="1890,1150,411,901" href="#" alt="The local environment"
+                                data-hotspot="four" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="1020,1120,411,901" href="#" alt="The local environment"
+                                data-hotspot="five" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="1020,860,411,901" href="#" alt="Thomas chief financial officer"
+                                data-hotspot="six" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="920,1850,411,901" href="#" alt="Connected transport"
+                                data-hotspot="seven" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="1420,1820,411,901" href="#" alt="Roger chief constable"
+                                data-hotspot="eight" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="1950,1750,411,901" href="#" alt="Intelligent energy"
+                                data-hotspot="night" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="2585,1555,2661,1331" href="#" alt="Peter contact centre worker"
+                                data-hotspot="ten" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="2378,1125,2126,1271" href="#" alt="Sarah entrepreneur"
+                                data-hotspot="tenone" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="1890,1360,411,901" href="#" alt="tentwo" data-hotspot="tentwo"
+                                data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="2088,1375,2126,1271" href="#" alt="Muhammed head teacher"
+                                data-hotspot="tenthree" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="1662,940,1531,1031" href="#" alt="John patient"
+                                data-hotspot="tenfour" data-type="circle" data-color="purple">
+
+                            <area shape="rect" coords="1972,790,1531,1031" href="#" alt="Connected street lights"
+                                data-hotspot="tenfive" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="2222,700,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tensix" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="2142,550,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tenseven" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="2632,540,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="teneight" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="2612,930,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tennight" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="3582,220,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tenten" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="3712,940,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tentenone" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="4692,1240,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tententwo" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="4312,540,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tententhree" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="3812,590,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tentenfour" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="3312,840,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tentenfive" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="4142,150,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tentensix" data-type="circle" data-color="green">
+
+                            <area shape="rect" coords="3412,1440,1531,1031" href="#" alt="Connected bins"
+                                data-hotspot="tentenseven" data-type="circle" data-color="green">
+
+                        </map>
+
+                        <div id="one">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="two">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="three">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="four">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="five">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="six">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="seven">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="eight">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="night">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="ten">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tenone">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tentwo">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tenthree">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tenfour">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tenfive">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tensix">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tenseven">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="teneight">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tennight">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tenten">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tentenone">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tententwo">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tententhree">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tentenfour">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tentenfive">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tentensix">
+                            <div class="hotspotCircle"></div>
+                        </div>
+
+                        <div id="tentenseven">
+                            <div class="hotspotCircle"></div>
+                        </div>
+                    </div>
+                    <!-- cityOverviewHelper -->
+                </div>
+                <!-- cityOverview -->
+            </div>
+            <!-- hotspots -->
+        </main>
+    </div>
+    <!-- wrapper -->
+
+    <div id="descriptions">
+
+        <div id="one-content" class="description">
+            <img src="./img/img-detail/NH3.png.jpg" width="100%" alt="">
+            <!-- <h3>Nhà Hàng Tiệc Cưới</h3>     -->
+            <div class="reset"></div>
+        </div>
+
+        <div id="two-content" class="description">
+            <img src="./img/img-detail/CQ.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="three-content" class="description">
+            <img src="./img/img-detail/KVC.png.webp" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="four-content" class="description">
+            <img src="./img/img-detail/KVC.png (2).webp" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="five-content" class="description">
+            <img src="./img/img-detail/KTL.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="six-content" class="description">
+            <img src="./img/img-detail/CFVTN.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="seven-content" class="description">
+            <img src="./img/img-detail/BGX.png.png" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="eight-content" class="description">
+            <img src="./img/img-detail/PT.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="night-content" class="description">
+            <img src="./img/img-detail/sb.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="ten-content" class="description">
+            <img src="./img/img-detail/NH1.png.jfif" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tenone-content" class="description">
+            <img src="./img/img-detail/NH2.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tentwo-content" class="description">
+            <img src="./img/img-detail/NH3.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tenthree-content" class="description">
+            <img src="./img/img-detail/QLN.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tenfour-content" class="description">
+            <img src="./img/img-detail/NH3.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tenfive-content" class="description">
+            <img src="./img/img-detail/KS.png.jfif" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tensix-content" class="description">
+            <img src="./img/img-detail/HR.png.jfif" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tenseven-content" class="description">
+            <img src="./img/img-detail/KARAOK.png.webp" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="teneight-content" class="description">
+            <img src="./img/img-detail/HOMESTAY.png.png" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tennight-content" class="description">
+            <img src="./img/img-detail/HB.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tenten-content" class="description">
+            <img src="./img/img-detail/KCT.png.png" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tentenone-content" class="description">
+            <img src="./img/img-detail/DSL.png.png" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tententwo-content" class="description">
+            <img src="./img/img-detail/KTNT.png.jpeg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tententhree-content" class="description">
+            <img src="./img/img-detail/NH4.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tentenfour-content" class="description">
+            <img src="./img/img-detail/KVC.png (2).webp" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tentenfive-content" class="description">
+            <img src="./img/img-detail/KCT.png.png" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tentensix-content" class="description">
+            <img src="./img/img-detail/BUNGALOW.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+        <div id="tentenseven-content" class="description">
+            <img src="./img/img-detail/HBC.png.jpg" width="100%" alt="">
+            <div class="reset"></div>
+        </div>
+
+    </div>
+    <!-- ======================================================================
+    ===============================------------------===================================
+---------------------------------------------------------------------------------------- -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76338/jquery.rwdImageMaps.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/76338/zoomooz.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
