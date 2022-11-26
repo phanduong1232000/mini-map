@@ -457,7 +457,7 @@ var fullOpacity = true;
 setInterval(function () {
     if (fullOpacity) {
         $(".hotspotCircle").animate({
-            opacity: 0.50
+            opacity: 0.80
         }, 500);
         fullOpacity = false;
     } else {
